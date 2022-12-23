@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    text-shadow: 5px 5px 5px #fff;
+    text-align: center;
+}
+
+
+label{
+    color:rgb(214, 208, 208);
+}
+
+.inputDiv{
+    margin-bottom: 12px;
+    display: flex;
+    position: relative;
+}
+
+#inp,#inpTwo,#copypButton,#copyButtonTwo{
+    padding: 7px ;
+    padding-bottom: 6px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+.inputDivTwo{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#inp{
+    margin-left: .9rem;
+    outline: none;
+    margin-right: .2rem;
+    border: transparent;
+}
+
+#inpTwo{
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+}
+
+
+.input-icon{
+    background-color: rgb(214, 208, 208);
+    padding: .3rem;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    font-weight:bold;
+    position: absolute;
+    outline: none;
+    border: transparent;
+}
+
+#changeButton{
+    padding: 15px 22px 15px 22px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition:1s;
+}
+
+#changeButton:hover {
+    background-color:#fff;
+    color:#000
+}
+.toast-message{
+    position: fixed;
+    background-color: rgb(10,201,110);
+    color : #000;
+    border : 1px solid #fff;
+    border-radius : .25rem;
+    cursor : pointer;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.toast-message-slide-in{
+    animation: toast-animation-in .5s ease-in;
+}
+
+.toast-message-slide-out{
+    animation: toast-animation-out .5s ease-in;
+}
+
+@keyframes toast-animation-in{
+    from{
+        transform: translateX(200px);
+        opacity:0;
+    }to{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+
+@keyframes toast-animation-out{
+    from{
+        transform: translateX(200px);
+        opacity: 1;
+    }to{
+        transform: translateX(0px);
+        opacity: 0;
+    }
+}
